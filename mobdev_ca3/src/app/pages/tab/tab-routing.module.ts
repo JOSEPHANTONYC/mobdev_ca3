@@ -42,13 +42,14 @@ const routes: Routes = [
     loadChildren: () => import('../death-count/death-count.module').then( m => m.DeathCountPageModule)
   }
 ]
+  }
+]
   },
   {
-    path: 'tab',
-    children: [
-      { path: '',
-    loadChildren: () => import('./pages/tab/tab.module').then( m => m.TabPageModule)
-  },
+    path: '',
+    redirectTo: 'tab',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
