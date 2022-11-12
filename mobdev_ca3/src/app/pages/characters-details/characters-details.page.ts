@@ -16,6 +16,8 @@ export class CharactersDetailsPage implements OnInit {
   constructor(private activatedRoute: ActivatedRoute, private api: ApiService) { }
 
   ngOnInit() {
+
+    
     this.characterId = this.activatedRoute.snapshot.paramMap.get('id');
     this.api.getCharacter(this.characterId).subscribe(res => {this.character = res; });
 

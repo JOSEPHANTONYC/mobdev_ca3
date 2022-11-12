@@ -14,6 +14,9 @@ const routes: Routes = [
     children: [
      { path: '',
     loadChildren: () => import('../characters/characters.module').then( m => m.CharactersPageModule)
+  }, {
+    path: ':id',
+    loadChildren: () => import('../characters-details/characters-details.module').then( m => m.CharactersDetailsPageModule)
   }
 ]
   },
@@ -47,7 +50,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'tab',
+    redirectTo: '/tab/characters',
     pathMatch: 'full'
   }
 ];
