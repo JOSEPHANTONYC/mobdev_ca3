@@ -15,7 +15,7 @@ export class EpisodesDetailsPage implements OnInit {
 
   ngOnInit() {
     this.episodeId = this.activatedRoute.snapshot.paramMap.get('id');
-    this.api.getCharacter(this.episodeId).subscribe(res => {this.episode = res; });
+    this.api.getEpisode(this.episodeId).subscribe(res => {this.episode = res[0]; });
 
 
 }

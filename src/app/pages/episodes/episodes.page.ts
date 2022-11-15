@@ -18,5 +18,11 @@ export class EpisodesPage implements OnInit {
   ngOnInit() {
     this.episodes = this.api.getEpisodes();
   }
+  openDetails(episode){
+    // let split = character.url.split('/');
+      let episodeId = episode.episode_id;
+      this.router.navigateByUrl(`/tab/episodes/${episodeId}`);
+    }
+  
 
 }

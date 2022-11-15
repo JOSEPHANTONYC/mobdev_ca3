@@ -2,11 +2,22 @@
   <ion-toolbar color="primary">
     <ion-buttons slot="start" defaulthref="/tab/(episodes:episodes)">
       <ion-back-button></ion-back-button>
-    </ion-buttons slot="end">
+    </ion-buttons>
     <ion-title>{{ episode?.title }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding="">
+
+  <ion-card *ngIf="episode" class="movie-card">
+    <ion-card-header>Episodes {{ episode.season }}: Series {{ episode.series }}</ion-card-header>
+    <ion-card-content>
+     
+    </ion-card-content>
+ 
+    
+  </ion-card>
+  
+    
 
 </ion-content>
