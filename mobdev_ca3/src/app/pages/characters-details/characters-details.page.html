@@ -2,7 +2,7 @@
   <ion-toolbar color="primary">
     <ion-buttons slot="start" defaulthref="/tab/(characters:characters)">
       <ion-back-button></ion-back-button>
-    </ion-buttons slot="end">
+    </ion-buttons>
     <ion-title>{{ character?.name }}</ion-title>
     
      
@@ -13,7 +13,7 @@
 <ion-content padding="">
 
   <ion-card *ngIf="character" class="movie-card">
-    <ion-card-header>Episode {{ characters.nickname }}: {{ characters.accupation }}</ion-card-header>
+    <ion-card-header>Episode {{ character.nickname }}: {{ character.occupation }}</ion-card-header>
     <ion-card-content>
      
     </ion-card-content>
