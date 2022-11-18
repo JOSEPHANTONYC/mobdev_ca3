@@ -13,4 +13,6 @@ showcase the ability to use appropriate Ionic Icons for the tabs
 
 for my project I used the app that we made in class and the materials in moodle to figure out how to do it.
 
- I used this API link https://breakingbadapi.com to run my project.
+I used this API link https://breakingbadapi.com to run my project.
+
+I used this link to find the icons for my project https://ionic.io/ionicons
